@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env index.js",
+    "db:generate": "drizzle-kit generate --dialect=postgresql --schema=src/db/schema.js --out=./src/db/migrations",
+    "db:migrate": "node --env-file=.env ./src/db/migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "drizzle-orm": "^0.34.1",
+    "express": "^4.21.0",
+    "morgan": "^1.10.0",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.24.2"
+  }
+}
