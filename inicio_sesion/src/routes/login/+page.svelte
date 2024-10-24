@@ -69,6 +69,26 @@
 				>
 			</div>
 
+<<<<<<< HEAD
+=======
+			<div>
+				<form action="/login" method="POST">
+					<input
+						type="text"
+						name="username"
+						placeholder="Nombre de usuario"
+						required
+					/>
+					<input
+						type="password"
+						name="password"
+						placeholder="Contraseña"
+						required
+					/>
+					<button type="submit">Iniciar sesión</button>
+				</form>
+			</div>
+>>>>>>> 6f340c4127e48ff28b982a06d480d69874feb55c
 		</form>
 	</div>
 </div>
