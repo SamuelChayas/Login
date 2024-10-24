@@ -1,0 +1,9 @@
+select * from usuarios;
+select * from roles;
+
+INSERT INTO roles (name) VALUES 
+('ADMIN'),
+('USER');
+
+ALTER TABLE usuarios
+ALTER COLUMN role_id SET DEFAULT 2;

@@ -1,6 +1,6 @@
 import { db } from '../db/database.js'; // Asegúrate de que la ruta sea correcta
 import { usuarios } from '../db/schema.js'; // Asegúrate de que la ruta sea correcta
-
+import { eq } from 'drizzle-orm';
 // Función para obtener la información de un usuario por ID
 export const getUserById = async (req, res) => {
     try {

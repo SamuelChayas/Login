@@ -11,7 +11,7 @@ router.post('/register', registerUser);
 router.post('/login', loginUser);
 
 // Rutas de usuario (requieren autenticación)
-router.get('/users/:id', authenticateToken, getUserById);    
+router.get('/users/:id', getUserById);    
 router.put('/users/:id', authenticateToken, updateUser);     
 router.delete('/users/:id', authenticateToken, deleteUser);
 

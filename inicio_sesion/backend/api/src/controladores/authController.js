@@ -1,6 +1,8 @@
 import { generatePassword, validatePassword } from '../utils/passwordUtils.js';
 import { usuarios } from '../db/schema.js';
 import jsonwebtoken from "jsonwebtoken";
+import { db } from '../db/database.js';
+import { eq } from 'drizzle-orm';
 
 
 const key = process.env.SECRET_KEY;
